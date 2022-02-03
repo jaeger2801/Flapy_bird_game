@@ -18,6 +18,7 @@ function draw() {
     newCursor();
 
     pajaro.pintarPajaro();
+    pajaro.movimientoPajaro();
 }
 
 function mouseClicked(){

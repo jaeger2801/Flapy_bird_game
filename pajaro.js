@@ -14,4 +14,8 @@ class Pajaro {
         ellipseMode(CENTER);
         ellipse(this.x, this.y, 100, 100);
     }
+
+    movimientoPajaro(){
+        this.y = this.gravedad ++;
+    }
 }
