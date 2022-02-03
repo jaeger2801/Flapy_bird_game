@@ -1,4 +1,5 @@
 let canvas;
+let pajaro;
 
 function setup() {
     frameRate(60);
@@ -6,13 +7,17 @@ function setup() {
     canvas.style('z-index', '-1');
     canvas.style('position', 'fixed');
     canvas.style('top', '0');
+
+    pajaro = new Pajaro();
+
 }
 
 function draw() {
     //background(0, 50);
     background(0);
     newCursor();
-    
+
+    pajaro.pintarPajaro();
 }
 
 function mouseClicked(){
