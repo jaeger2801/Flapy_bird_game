@@ -25,6 +25,13 @@ function mouseClicked(){
     //bird.flyUpward();
 }
 
+function keyPressed() {
+    if (key === ' ') {
+        /* console.log('se presionó la tecla espacio'); */
+        pajaro.saltoPajaro();
+    }
+}
+
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
 }
